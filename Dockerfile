@@ -13,3 +13,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # install nvm via curl
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
+# install the lastest stable npm so we have something
+RUN nvm install 12
